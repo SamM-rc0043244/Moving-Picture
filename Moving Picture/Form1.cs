@@ -37,5 +37,20 @@ namespace Moving_Picture
             pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 5);
         }
 
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if(pictureBox1.Location.X > 0)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
+            }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if(pictureBox1.Location.X+5 < ClientRectangle.Width)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Loaction.Y);
+            }
+        }
     }
 }
