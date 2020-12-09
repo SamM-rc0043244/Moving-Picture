@@ -17,40 +17,26 @@ namespace Moving_Picture
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
         }
 
-        private void Button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 5);
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 5);
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            if(pictureBox1.Location.X > 0)
-            {
-                pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
-            }
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            if(pictureBox1.Location.X+5 < ClientRectangle.Width)
-            {
-                pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Loaction.Y);
-            }
-        }
+       
     }
 }
